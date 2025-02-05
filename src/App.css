@@ -94,6 +94,10 @@ nav {
   border-radius: 50px;
   background-color: black;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 #add svg{
@@ -118,6 +122,76 @@ form input{
   padding: 0 15px;
   font-size: 19px;
 }
+
+.chat-page {
+  flex-grow: 1;  /* Takes remaining space dynamically */
+  min-height: calc(100vh - 160px);
+  /* background-color: aqua; */
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.user,.ai{
+  width: 90%;
+  padding: 20px 30px;
+color: white;
+background-color: black;
+border: 2px solid rgb(255, 255, 255, 0.297);
+outline: none;
+  border-radius: 20px;
+  font-size: 20px;
+
+}
+
+.pop-up{
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+  background-color: black;
+border: 2px solid rgba(255, 255, 255, 0.224);
+  position: absolute;
+  bottom: 100px;
+  left: 15%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.select-up,.select-gen{
+color: white;
+/* width: 100px; */
+padding: 1px;
+display: flex;
+align-items: center;
+justify-content: start;
+gap: 5px;
+font-size: 16px;
+border-radius:20px;
+cursor: pointer;
+}
+.select-up svg{
+  color: greenyellow;
+  width: 25px;
+  height: 25px;
+}
+
+.select-gen svg{
+  color: rgb(47, 68, 255);
+  width: 25px;
+  height: 25px;
+}
+.select-up :hover,.select-gen :hover{
+  background-color: rgba(240, 248, 255, 0.313);
+}
+
 
 @media (max-width: 500px) {
   #tag {

@@ -1,12 +1,13 @@
-import React from 'react'
-import Home from './pages/Home'
+import React from 'react';
+import Home from './pages/Home';
+import UserContext from './context/userContext';
 
 const App = () => {
   return (
-    <div>
-     <Home></Home>
-    </div>
-  )
-}
+    <UserContext>
+      <Home />
+    </UserContext>
+  );
+};
 
-export default App
+export default App;
